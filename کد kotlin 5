@@ -1,0 +1,15 @@
+// تعریف کلاس
+class Book(val title: String, val author: String) {
+    fun showInfo() {
+        println("عنوان کتاب: $title")
+        println("نویسنده: $author")
+    }
+}
+
+fun main() {
+    // ساخت شیء (Object) از کلاس Book
+    val myBook = Book("بوف کور", "صادق هدایت")
+    
+    // فراخوانی متد کلاس
+    myBook.showInfo()
+}
