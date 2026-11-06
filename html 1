@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفی دانشجو</title>
+    <style>
+        /* استایل‌دهی با CSS */
+        body {
+            background-color: #f0f8ff; /* رنگ پس‌زمینه آبی روشن */
+            font-family: Tahoma, sans-serif; /* فونت */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>اطلاعات دانشجو</h1>
+        <p><strong>نام:</strong> آرسلان</p>
+        <p><strong>رشته تحصیلی:</strong> مهندسی کامپیوتر</p>
+        <p><strong>دانشگاه:</strong> دانشگاه آزاد</p>
+    </div>
+
+</body>
+</html>
