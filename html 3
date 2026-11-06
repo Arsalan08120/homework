@@ -1,0 +1,39 @@
+<!-- این کد معمولاً در فایل home.page.html در پروژه Ionic قرار می‌گیرد -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>مدیریت دانشجویان</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <!-- بخش ورودی -->
+  <ion-item>
+    <ion-label position="floating">نام دانشجو</ion-label>
+    <ion-input type="text" placeholder="نام را وارد کنید"></ion-input>
+  </ion-item>
+
+  <!-- دکمه ثبت -->
+  <ion-button expand="block" class="ion-margin-top">
+    ثبت
+  </ion-button>
+
+  <!-- فهرست نمایش دانشجویان -->
+  <ion-list class="ion-margin-top">
+    <ion-list-header>
+      <ion-label>لیست دانشجویان</ion-label>
+    </ion-list-header>
+
+    <!-- نمونه آیتم‌های لیست -->
+    <ion-item>
+      <ion-label>علی رضایی</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>سارا محمدی</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>رضا احمدی</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
