@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+
+class Exercise3 extends StatefulWidget {
+  @override
+  _Exercise3State createState() => _Exercise3State();
+}
+
+class _Exercise3State extends State<Exercise3> {
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _lastNameController = TextEditingController();
+  final TextEditingController _fieldController = TextEditingController();
+  
+  String _resultText = "";
+
+  void _submitForm() {
+    setState(() {
+      _resultText = "نام: ${_nameController.text}\n"
+                    "نام خانوادگی: ${_lastNameController.text}\n"
+                    "رشته: ${_fieldController.text}";
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('فرم ثبت‌نام')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            TextField(
+              controller: _nameController,
+              decoration: InputDecoration(labelText: 'نام'),
+            ),
+            TextField(
+              controller: _lastNameController,
+              decoration: InputDecoration(labelText: 'نام خانوادگی'),
+            ),
+            TextField(
+              controller: _fieldController,
+              decoration: InputDecoration(labelText: 'رشته تحصیلی'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: _submitForm,
+              child: Text('ثبت اطلاعات'),
+            ),
+            SizedBox(height: 20),
+            // نمایش اطلاعات
+            Text(
+              _resultText,
+              style: TextStyle(fontSize: 18, color: Colors.green),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
