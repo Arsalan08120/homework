@@ -1,0 +1,11 @@
+public class Exercise2 {
+    public static void main(String[] args) {
+        int age = 17; // می‌توانید این عدد را تغییر دهید
+        
+        if (age >= 18) {
+            System.out.println("شما بالای 18 سال هستید.");
+        } else {
+            System.out.println("شما زیر 18 سال هستید.");
+        }
+    }
+}
