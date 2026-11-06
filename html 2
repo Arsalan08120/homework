@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تعامل با جاوا اسکریپت</title>
+</head>
+<body>
+
+    <h2>تست جاوا اسکریپت</h2>
+    
+    <!-- دکمه با رویداد کلیک -->
+    <button onclick="showMessage()">نمایش پیام</button>
+
+    <!-- محلی برای نمایش پیام -->
+    <p id="message" style="color: green; font-weight: bold; margin-top: 15px;"></p>
+
+    <!-- کدهای جاوا اسکریپت -->
+    <script>
+        function showMessage() {
+            // پیدا کردن المان با آیدی message و تغییر متن آن
+            document.getElementById("message").textContent = "به برنامه خوش آمدید!";
+        }
+    </script>
+
+</body>
+</html>
