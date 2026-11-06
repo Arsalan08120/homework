@@ -1,0 +1,11 @@
+public class Exercise1 {
+    public static void main(String[] args) {
+        // تعریف متغیرها
+        String name = "آرسلان";
+        int age = 20;
+        
+        // نمایش اطلاعات
+        System.out.println("نام دانشجو: " + name);
+        System.out.println("سن دانشجو: " + age + " سال");
+    }
+}
