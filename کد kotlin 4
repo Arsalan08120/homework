@@ -1,0 +1,10 @@
+// تعریف تابع
+fun greet(name: String) {
+    println("سلام $name، خوش آمدید!")
+}
+
+fun main() {
+    // فراخوانی تابع
+    greet("آرسلان")
+    greet("علی")
+}
