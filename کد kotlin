@@ -1,0 +1,12 @@
+fun main() {
+    // تعریف متغیرها
+    val name = "آرسلان"
+    val age = 20
+    val fieldOfStudy = "مهندسی کامپیوتر"
+
+    // نمایش اطلاعات
+    println("اطلاعات دانشجو:")
+    println("نام: $name")
+    println("سن: $age سال")
+    println("رشته تحصیلی: $fieldOfStudy")
+}
